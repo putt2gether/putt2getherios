@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PT_AutoPressFormatView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pGA-Kc-QVp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="667" id="WNe-Ve-rEv"/>
+                        <constraint firstAttribute="width" constant="375" id="g3i-ib-DgA"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1OV-iD-V1g">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="voj-Of-hpJ"/>
+                        <outlet property="delegate" destination="-1" id="Vae-0Y-AYg"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1OV-iD-V1g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1dB-Tn-FCs"/>
+                <constraint firstAttribute="trailing" secondItem="1OV-iD-V1g" secondAttribute="trailing" id="7xX-tC-Uac"/>
+                <constraint firstAttribute="bottom" secondItem="1OV-iD-V1g" secondAttribute="bottom" id="Crc-rg-f62"/>
+                <constraint firstItem="pGA-Kc-QVp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MLd-0M-mCb"/>
+                <constraint firstAttribute="bottom" secondItem="pGA-Kc-QVp" secondAttribute="bottom" id="Xnv-YK-xhP"/>
+                <constraint firstItem="1OV-iD-V1g" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dlE-ed-o4s"/>
+                <constraint firstAttribute="trailing" secondItem="pGA-Kc-QVp" secondAttribute="trailing" id="fet-id-nkv"/>
+                <constraint firstItem="pGA-Kc-QVp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hph-1c-l9E"/>
+            </constraints>
+            <connections>
+                <outlet property="fadedView" destination="pGA-Kc-QVp" id="Y8u-K6-rdi"/>
+                <outlet property="tableYpos" destination="dlE-ed-o4s" id="2OV-zm-Cfq"/>
+                <outlet property="tableautoPress" destination="1OV-iD-V1g" id="syx-An-sXf"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="98.5"/>
+        </view>
+    </objects>
+</document>

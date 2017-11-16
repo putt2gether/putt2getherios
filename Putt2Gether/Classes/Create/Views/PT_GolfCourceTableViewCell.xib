@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="49" id="KGk-i7-Jjw" customClass="PT_GolfCourceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOLF COURSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFo-3s-xZQ">
+                        <rect key="frame" x="10" y="13" width="115" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="115" id="hPl-VB-tEY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEO-Bg-0DF">
+                        <rect key="frame" x="156" y="10" width="176" height="26"/>
+                        <color key="backgroundColor" red="0.023529411764705882" green="0.26666666666666666" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="176" id="rMY-DU-iNY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                        <state key="normal" title="SELECT GOLF COURSE">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5St-OP-WbB">
+                        <rect key="frame" x="10" y="47" width="324" height="1"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="saN-Zd-kMS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cFo-3s-xZQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="0BQ-FG-ixV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="5St-OP-WbB" secondAttribute="bottom" constant="-7.5" id="6H3-MO-KCh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="QEO-Bg-0DF" secondAttribute="bottom" constant="4.5" id="6mX-Zx-hxV"/>
+                    <constraint firstItem="QEO-Bg-0DF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-1.25" id="IZ8-iS-yVb"/>
+                    <constraint firstItem="QEO-Bg-0DF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="Upj-ms-oBW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="5St-OP-WbB" secondAttribute="trailing" constant="-2" id="XJn-3Y-xqy"/>
+                    <constraint firstItem="QEO-Bg-0DF" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="XZP-bD-rLJ"/>
+                    <constraint firstItem="cFo-3s-xZQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YSY-1e-nbs"/>
+                    <constraint firstItem="5St-OP-WbB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="kz2-ME-Eji"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cFo-3s-xZQ" secondAttribute="bottom" constant="6.5" id="ukj-5c-k9W"/>
+                    <constraint firstItem="cFo-3s-xZQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="y5N-LB-dGd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="constraintButtonWidth" destination="rMY-DU-iNY" id="HcC-fI-X83"/>
+                <outlet property="golfCourseButton" destination="QEO-Bg-0DF" id="5IA-i4-upw"/>
+            </connections>
+            <point key="canvasLocation" x="-48" y="154.5"/>
+        </tableViewCell>
+    </objects>
+</document>

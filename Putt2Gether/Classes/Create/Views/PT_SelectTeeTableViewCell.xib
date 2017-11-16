@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PT_SelectTeeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT TEE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5V-fY-g1T">
+                        <rect key="frame" x="10" y="11" width="89" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="89" id="CA8-Le-RJ1"/>
+                            <constraint firstAttribute="height" constant="21" id="p5h-4W-cNI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeX-An-JqX">
+                        <rect key="frame" x="164" y="11" width="22" height="22"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="cKe-mm-DWI"/>
+                            <constraint firstAttribute="width" constant="22" id="vBt-3o-gSb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <state key="normal" title="M">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPg-zY-YUA">
+                        <rect key="frame" x="203" y="11" width="22" height="22"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="mn6-tC-3SN"/>
+                            <constraint firstAttribute="width" constant="22" id="yMi-P0-sJI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <state key="normal" title="W">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTX-oD-DCB">
+                        <rect key="frame" x="242" y="11" width="22" height="22"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="jsd-WH-MoU"/>
+                            <constraint firstAttribute="width" constant="22" id="vQn-Hw-E3X"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <state key="normal" title="J">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Rf-IR-1dZ">
+                        <rect key="frame" x="7" y="41" width="306" height="1"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="faG-PL-xQi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4Rf-IR-1dZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-1" id="10c-nO-Ipv"/>
+                    <constraint firstItem="pTX-oD-DCB" firstAttribute="leading" secondItem="WPg-zY-YUA" secondAttribute="trailing" constant="17" id="D1Z-l6-1Uu"/>
+                    <constraint firstItem="pTX-oD-DCB" firstAttribute="centerY" secondItem="WPg-zY-YUA" secondAttribute="centerY" id="FvB-Ho-OlT"/>
+                    <constraint firstItem="WPg-zY-YUA" firstAttribute="centerY" secondItem="AeX-An-JqX" secondAttribute="centerY" id="Jd5-aW-af9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4Rf-IR-1dZ" secondAttribute="trailing" constant="-1" id="LAs-Ig-LjK"/>
+                    <constraint firstItem="AeX-An-JqX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Lgy-hb-dAz"/>
+                    <constraint firstItem="WPg-zY-YUA" firstAttribute="leading" secondItem="AeX-An-JqX" secondAttribute="trailing" constant="17" id="V82-9D-qxz"/>
+                    <constraint firstItem="d5V-fY-g1T" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Xxj-3M-UE5"/>
+                    <constraint firstItem="AeX-An-JqX" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="15" id="Y7a-e7-GBq"/>
+                    <constraint firstItem="d5V-fY-g1T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="dz5-h4-K9u"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4Rf-IR-1dZ" secondAttribute="bottom" constant="-7" id="z5y-3B-bro"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="jButton" destination="pTX-oD-DCB" id="i5c-QG-ehI"/>
+                <outlet property="mButton" destination="AeX-An-JqX" id="fV8-7t-a07"/>
+                <outlet property="wButton" destination="WPg-zY-YUA" id="6WK-PU-L6P"/>
+            </connections>
+            <point key="canvasLocation" x="74" y="147"/>
+        </tableViewCell>
+    </objects>
+</document>

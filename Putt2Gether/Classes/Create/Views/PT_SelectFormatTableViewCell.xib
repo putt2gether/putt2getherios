@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PT_SelectFormatTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT FORMAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgl-sI-Mdx">
+                        <rect key="frame" x="10" y="11" width="125" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="125" id="hQI-0M-XZl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gg1-ht-3Md">
+                        <rect key="frame" x="140" y="10" width="172" height="26"/>
+                        <color key="backgroundColor" red="0.023529411760000001" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="172" id="79V-S6-xTl"/>
+                            <constraint firstAttribute="height" constant="26" id="XBs-mb-XBy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="11" maxY="0.0"/>
+                        <state key="normal" title="GROSS STROKEPLAY">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drop down1" translatesAutoresizingMaskIntoConstraints="NO" id="RcI-Rs-wXb">
+                        <rect key="frame" x="294" y="14" width="15" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="0HU-Q0-1Ea"/>
+                            <constraint firstAttribute="width" constant="15" id="dKN-3F-SA6"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jmo-ka-130">
+                        <rect key="frame" x="8" y="41" width="306" height="1"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="fTe-T8-5FN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Jmo-ka-130" secondAttribute="bottom" constant="-7" id="6Rg-by-yM4"/>
+                    <constraint firstItem="RcI-Rs-wXb" firstAttribute="centerY" secondItem="gg1-ht-3Md" secondAttribute="centerY" id="Acc-82-Len"/>
+                    <constraint firstItem="lgl-sI-Mdx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="Cvh-0A-0O7"/>
+                    <constraint firstItem="RcI-Rs-wXb" firstAttribute="trailing" secondItem="gg1-ht-3Md" secondAttribute="trailing" constant="-3" id="Khk-OI-gzL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lgl-sI-Mdx" secondAttribute="bottom" constant="3.5" id="SZS-rn-pJd"/>
+                    <constraint firstItem="lgl-sI-Mdx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Xx5-UZ-Zd7"/>
+                    <constraint firstItem="lgl-sI-Mdx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="dAs-8r-GVa"/>
+                    <constraint firstItem="gg1-ht-3Md" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="fyz-Xf-cAB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Jmo-ka-130" secondAttribute="trailing" constant="-2" id="mJi-Zh-Mc9"/>
+                    <constraint firstItem="Jmo-ka-130" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="qA3-Q6-419"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="gg1-ht-3Md" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" constant="1" id="N4v-1D-bzq"/>
+            </constraints>
+            <connections>
+                <outlet property="constraintButtonWidth" destination="79V-S6-xTl" id="DqB-jy-lVA"/>
+                <outlet property="formatButton" destination="gg1-ht-3Md" id="ABO-FW-zVT"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="126"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="drop down1" width="16" height="16"/>
+    </resources>
+</document>

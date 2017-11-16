@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PT_VegasFormatView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQT-JG-97a">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="maq-1m-0Bv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="yjc-mS-9tX"/>
+                        <outlet property="delegate" destination="-1" id="Zll-cz-jLw"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="maq-1m-0Bv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7YY-Kr-2cF"/>
+                <constraint firstAttribute="bottom" secondItem="dQT-JG-97a" secondAttribute="bottom" id="Awq-QV-4Hz"/>
+                <constraint firstItem="maq-1m-0Bv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GHe-IT-X5H"/>
+                <constraint firstAttribute="trailing" secondItem="maq-1m-0Bv" secondAttribute="trailing" id="LKD-QU-g2h"/>
+                <constraint firstItem="dQT-JG-97a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gXd-GV-pyI"/>
+                <constraint firstItem="dQT-JG-97a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mny-a4-ewC"/>
+                <constraint firstAttribute="bottom" secondItem="maq-1m-0Bv" secondAttribute="bottom" id="xam-zE-9ex"/>
+                <constraint firstAttribute="trailing" secondItem="dQT-JG-97a" secondAttribute="trailing" id="zD3-03-gSw"/>
+            </constraints>
+            <connections>
+                <outlet property="fadedView" destination="dQT-JG-97a" id="IQf-ks-1z6"/>
+                <outlet property="tableVegasformat" destination="maq-1m-0Bv" id="lT6-MT-MNB"/>
+                <outlet property="tableYpos" destination="7YY-Kr-2cF" id="A5y-EV-W4d"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

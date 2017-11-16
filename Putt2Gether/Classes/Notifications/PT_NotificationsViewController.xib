@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PT_NotificationsViewController">
+            <connections>
+                <outlet property="bannerImage" destination="53j-8w-EPF" id="wwN-Kb-4ER"/>
+                <outlet property="myTableView" destination="JF8-7j-WSA" id="MKS-fF-qws"/>
+                <outlet property="notificationBtn" destination="Cz9-LR-iht" id="vIA-Vx-uf5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ju5-D2-7hp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cz9-LR-iht">
+                            <rect key="frame" x="2" y="18" width="163" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="163" id="5sd-6Y-oGB"/>
+                                <constraint firstAttribute="height" constant="32" id="ITu-V4-hbT"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="NOTIFICATIONS" image="back"/>
+                            <connections>
+                                <action selector="notifiBtnClicked:" destination="-1" eventType="touchUpInside" id="WB8-MG-fX3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.043137254901960784" green="0.3529411764705882" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Cz9-LR-iht" firstAttribute="leading" secondItem="ju5-D2-7hp" secondAttribute="leading" constant="2" id="3uh-cH-Ouf"/>
+                        <constraint firstItem="Cz9-LR-iht" firstAttribute="centerY" secondItem="ju5-D2-7hp" secondAttribute="centerY" constant="5" id="6mY-c2-bA0"/>
+                        <constraint firstAttribute="height" constant="58" id="M5Y-JJ-VFQ"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JF8-7j-WSA">
+                    <rect key="frame" x="0.0" y="58" width="375" height="509"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Z95-m2-2X6"/>
+                        <outlet property="delegate" destination="-1" id="11V-Yr-x6v"/>
+                    </connections>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="53j-8w-EPF">
+                    <rect key="frame" x="0.0" y="566" width="375" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="dpg-Cs-lcA"/>
+                        <constraint firstAttribute="width" constant="375" id="nhX-2R-pD7"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWI-52-bqP">
+                    <rect key="frame" x="0.0" y="564" width="375" height="54"/>
+                    <connections>
+                        <action selector="actionBannerClicked:" destination="-1" eventType="touchUpInside" id="Vnz-pO-tof"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iWI-52-bqP" firstAttribute="width" secondItem="53j-8w-EPF" secondAttribute="width" id="5Cn-x2-AxG"/>
+                <constraint firstItem="53j-8w-EPF" firstAttribute="top" secondItem="JF8-7j-WSA" secondAttribute="bottom" constant="-1" id="9aW-67-KID"/>
+                <constraint firstAttribute="trailing" secondItem="53j-8w-EPF" secondAttribute="trailing" id="BBk-3y-xjP"/>
+                <constraint firstItem="iWI-52-bqP" firstAttribute="height" secondItem="53j-8w-EPF" secondAttribute="height" id="I6l-if-QJX"/>
+                <constraint firstItem="iWI-52-bqP" firstAttribute="top" secondItem="53j-8w-EPF" secondAttribute="top" constant="-2" id="Ice-gN-Cyv"/>
+                <constraint firstAttribute="bottom" secondItem="53j-8w-EPF" secondAttribute="bottom" constant="47" id="JPm-b7-1dM"/>
+                <constraint firstItem="JF8-7j-WSA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NiY-Bf-GTq"/>
+                <constraint firstItem="ju5-D2-7hp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ROS-oP-TNE"/>
+                <constraint firstItem="53j-8w-EPF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VKp-hK-hff"/>
+                <constraint firstItem="JF8-7j-WSA" firstAttribute="top" secondItem="ju5-D2-7hp" secondAttribute="bottom" id="XbQ-xN-OI0"/>
+                <constraint firstAttribute="trailing" secondItem="ju5-D2-7hp" secondAttribute="trailing" id="ezy-RG-BSl"/>
+                <constraint firstItem="JF8-7j-WSA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hSe-Lu-Efe"/>
+                <constraint firstItem="ju5-D2-7hp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hXc-4g-NTd"/>
+                <constraint firstAttribute="trailing" secondItem="JF8-7j-WSA" secondAttribute="trailing" id="how-gT-sX3"/>
+                <constraint firstItem="iWI-52-bqP" firstAttribute="leading" secondItem="53j-8w-EPF" secondAttribute="leading" id="j0f-lu-ua6"/>
+                <constraint firstItem="ju5-D2-7hp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="m25-QF-fHt"/>
+                <constraint firstAttribute="trailing" secondItem="ju5-D2-7hp" secondAttribute="trailing" id="u7U-LC-k66"/>
+            </constraints>
+            <point key="canvasLocation" x="610.5" y="362.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="25" height="25"/>
+    </resources>
+</document>

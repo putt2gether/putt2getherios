@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PT_SelectHolesTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT HOLES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofy-1u-Cwq">
+                        <rect key="frame" x="10" y="11" width="127" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="127" id="NMx-kQ-gQK"/>
+                            <constraint firstAttribute="height" constant="21" id="ouO-lx-jL7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36y-Rw-2n0">
+                        <rect key="frame" x="166" y="12" width="58" height="20"/>
+                        <color key="backgroundColor" red="0.023529411760000001" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="58" id="0xz-La-jaO"/>
+                            <constraint firstAttribute="height" constant="20" id="iwZ-uB-Oa1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                        <state key="normal" title="FRONT9">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x57-Fk-sgw">
+                        <rect key="frame" x="232" y="12" width="58" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="58" id="74P-0X-EGQ"/>
+                            <constraint firstAttribute="height" constant="20" id="LGO-1g-Hxc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                        <state key="normal" title="BACK9">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rB0-wi-G8c">
+                        <rect key="frame" x="6" y="45" width="306" height="1"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="noK-zg-J7c"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rB0-wi-G8c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-2" id="5CI-uS-vuE"/>
+                    <constraint firstItem="Ofy-1u-Cwq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="6wI-Qw-XWo"/>
+                    <constraint firstItem="x57-Fk-sgw" firstAttribute="centerY" secondItem="36y-Rw-2n0" secondAttribute="centerY" id="JD6-5w-DDQ"/>
+                    <constraint firstItem="36y-Rw-2n0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="O7R-Ei-U7W"/>
+                    <constraint firstItem="rB0-wi-G8c" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="RAX-JJ-5U1"/>
+                    <constraint firstItem="36y-Rw-2n0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="35" id="S6B-1c-b5l"/>
+                    <constraint firstItem="x57-Fk-sgw" firstAttribute="leading" secondItem="36y-Rw-2n0" secondAttribute="trailing" constant="8" id="SoR-7f-PSY"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="rB0-wi-G8c" secondAttribute="bottom" constant="-10.5" id="cWz-Ce-wGe"/>
+                    <constraint firstItem="Ofy-1u-Cwq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="j5x-KT-SWR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="back9Button" destination="x57-Fk-sgw" id="Vy7-sh-IsV"/>
+                <outlet property="constraintFront9Width" destination="0xz-La-jaO" id="aUK-ZL-6KD"/>
+                <outlet property="front9Button" destination="36y-Rw-2n0" id="wRW-8z-z1t"/>
+            </connections>
+            <point key="canvasLocation" x="150" y="198"/>
+        </tableViewCell>
+    </objects>
+</document>

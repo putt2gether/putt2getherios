@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PT_GroupsView">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="489"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hci-dX-CF9">
+                    <rect key="frame" x="0.0" y="46" width="361" height="443"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="E2W-lJ-SFC"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="Jeb-xd-rkO"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szq-EF-KPd">
+                    <rect key="frame" x="0.0" y="0.0" width="361" height="46"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7jJ-Vx-XPz">
+                            <rect key="frame" x="8" y="8" width="345" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.023529411760000001" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="7jJ-Vx-XPz" firstAttribute="leading" secondItem="szq-EF-KPd" secondAttribute="leading" constant="8" id="3BS-xg-Egm"/>
+                        <constraint firstAttribute="bottom" secondItem="7jJ-Vx-XPz" secondAttribute="bottom" constant="8" id="ENZ-vp-I2j"/>
+                        <constraint firstAttribute="height" constant="46" id="Oq9-C2-GYy"/>
+                        <constraint firstAttribute="trailing" secondItem="7jJ-Vx-XPz" secondAttribute="trailing" constant="8" id="ZT4-KY-Lv1"/>
+                        <constraint firstItem="7jJ-Vx-XPz" firstAttribute="top" secondItem="szq-EF-KPd" secondAttribute="top" constant="8" id="djV-A8-uKY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Hci-dX-CF9" secondAttribute="bottom" id="AYt-9w-lLV"/>
+                <constraint firstAttribute="trailing" secondItem="szq-EF-KPd" secondAttribute="trailing" id="Oeu-9K-zzq"/>
+                <constraint firstItem="Hci-dX-CF9" firstAttribute="top" secondItem="szq-EF-KPd" secondAttribute="bottom" id="Ruz-hT-1tI"/>
+                <constraint firstItem="szq-EF-KPd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="V4k-KE-UZb"/>
+                <constraint firstItem="Hci-dX-CF9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XEv-M5-3Sd"/>
+                <constraint firstAttribute="trailing" secondItem="Hci-dX-CF9" secondAttribute="trailing" id="fo6-zQ-2dw"/>
+                <constraint firstItem="szq-EF-KPd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gTF-t0-pQB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="searchText" destination="7jJ-Vx-XPz" id="ky9-eA-06M"/>
+                <outlet property="tableView" destination="Hci-dX-CF9" id="AN3-d6-bJM"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="114.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PT_HomeLowerView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="322"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GREENS IN REGULATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baB-Bb-b7e">
+                    <rect key="frame" x="114" y="15" width="187" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="IIB-FL-bA5"/>
+                        <constraint firstAttribute="width" constant="187" id="bxB-qy-jMN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUr-kd-HUr">
+                    <rect key="frame" x="107" y="80" width="79" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="79" id="04x-fL-pHe"/>
+                        <constraint firstAttribute="height" constant="25.5" id="LpY-IZ-SuW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNT-3u-EWS">
+                    <rect key="frame" x="234" y="80" width="84" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25.5" id="ZoI-eG-Ne0"/>
+                        <constraint firstAttribute="width" constant="84" id="jy7-Vj-RV2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPN-ME-RWA">
+                    <rect key="frame" x="107" y="114" width="79" height="23"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="kdJ-5J-Ju6"/>
+                        <constraint firstAttribute="width" constant="79" id="rBh-tg-FhX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                    <state key="normal" title="HIT">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FL-wy-O4b">
+                    <rect key="frame" x="232.5" y="114" width="85" height="23"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="G94-QS-MDd"/>
+                        <constraint firstAttribute="height" constant="23" id="m5l-GB-ScK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                    <state key="normal" title="MISSED">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9FL-wy-O4b" firstAttribute="centerX" secondItem="fNT-3u-EWS" secondAttribute="centerX" constant="-1" id="MQ4-oz-GZt"/>
+                <constraint firstItem="oPN-ME-RWA" firstAttribute="centerX" secondItem="qUr-kd-HUr" secondAttribute="centerX" id="Omv-eF-buS"/>
+                <constraint firstItem="qUr-kd-HUr" firstAttribute="top" secondItem="baB-Bb-b7e" secondAttribute="bottom" constant="48" id="YIu-Ks-Xl6"/>
+                <constraint firstItem="qUr-kd-HUr" firstAttribute="leading" secondItem="baB-Bb-b7e" secondAttribute="leading" constant="-7" id="ZKZ-cb-pEL"/>
+                <constraint firstItem="fNT-3u-EWS" firstAttribute="top" secondItem="baB-Bb-b7e" secondAttribute="bottom" constant="48" id="ab7-G8-F1l"/>
+                <constraint firstItem="fNT-3u-EWS" firstAttribute="trailing" secondItem="baB-Bb-b7e" secondAttribute="trailing" constant="17" id="avO-RS-v5e"/>
+                <constraint firstItem="oPN-ME-RWA" firstAttribute="top" secondItem="qUr-kd-HUr" secondAttribute="bottom" constant="8" id="ghJ-Jd-hOJ"/>
+                <constraint firstItem="baB-Bb-b7e" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hxN-1O-9zO"/>
+                <constraint firstItem="9FL-wy-O4b" firstAttribute="top" secondItem="fNT-3u-EWS" secondAttribute="bottom" constant="8" id="nwD-ks-u5K"/>
+                <constraint firstItem="baB-Bb-b7e" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="tqw-Ic-bhO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="constraintYHitButton" destination="YIu-Ks-Xl6" id="rJy-4I-wbG"/>
+                <outlet property="constraintYMissedButton" destination="ab7-G8-F1l" id="vUJ-Ef-dVf"/>
+                <outlet property="hitButton" destination="oPN-ME-RWA" id="C80-as-z7A"/>
+                <outlet property="leftLabel" destination="qUr-kd-HUr" id="a8f-4W-irt"/>
+                <outlet property="missedButton" destination="9FL-wy-O4b" id="s25-pt-75o"/>
+                <outlet property="rightLabel" destination="fNT-3u-EWS" id="B6M-Qy-Aga"/>
+                <outlet property="topLabel" destination="baB-Bb-b7e" id="u3g-hs-c9z"/>
+            </connections>
+            <point key="canvasLocation" x="345" y="10"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PT_HomePuttingView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="322"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAIRWAYS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNX-QR-xhf">
+                    <rect key="frame" x="170" y="15" width="75" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="95F-Je-Z1v"/>
+                        <constraint firstAttribute="height" constant="17" id="eae-Cy-0iQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfO-g5-fEJ">
+                    <rect key="frame" x="69" y="98" width="53" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="53" id="VP1-6v-ujb"/>
+                        <constraint firstAttribute="height" constant="25.5" id="oNZ-e9-GjJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npk-VN-sGf">
+                    <rect key="frame" x="292" y="98" width="50" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25.5" id="JBO-ko-hWo"/>
+                        <constraint firstAttribute="width" constant="50" id="XJn-F6-sNo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYX-lz-mea">
+                    <rect key="frame" x="181" y="98" width="56" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="56" id="aIT-gS-eMf"/>
+                        <constraint firstAttribute="height" constant="26" id="caF-kC-yG6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fairways_left(3)" translatesAutoresizingMaskIntoConstraints="NO" id="s9u-zY-TFI">
+                    <rect key="frame" x="79" y="126" width="33" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="Ycr-hb-VCo"/>
+                        <constraint firstAttribute="width" constant="33" id="tja-oq-xAe"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fairways_mid" translatesAutoresizingMaskIntoConstraints="NO" id="URf-oL-yT3">
+                    <rect key="frame" x="191" y="126" width="33" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="33" id="XrG-CB-cIa"/>
+                        <constraint firstAttribute="height" constant="33" id="awl-PO-2Cz"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fairways_right" translatesAutoresizingMaskIntoConstraints="NO" id="e0c-TL-8Sh">
+                    <rect key="frame" x="302" y="126" width="33" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="mx0-cS-OLk"/>
+                        <constraint firstAttribute="width" constant="33" id="zBa-t6-TgS"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="URf-oL-yT3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2xf-WR-jOe"/>
+                <constraint firstItem="s9u-zY-TFI" firstAttribute="top" secondItem="jfO-g5-fEJ" secondAttribute="bottom" constant="2" id="4dA-vo-zcv"/>
+                <constraint firstItem="e0c-TL-8Sh" firstAttribute="top" secondItem="Npk-VN-sGf" secondAttribute="bottom" constant="2" id="9EJ-Fv-n25"/>
+                <constraint firstItem="URf-oL-yT3" firstAttribute="top" secondItem="tYX-lz-mea" secondAttribute="bottom" constant="2" id="Eox-nT-TYd"/>
+                <constraint firstItem="XNX-QR-xhf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="FIS-ei-siv"/>
+                <constraint firstItem="tYX-lz-mea" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="2" id="HpL-7S-76A"/>
+                <constraint firstAttribute="trailing" secondItem="e0c-TL-8Sh" secondAttribute="trailing" constant="79" id="ILj-4o-tnb"/>
+                <constraint firstItem="s9u-zY-TFI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="79" id="Z8Z-mg-0om"/>
+                <constraint firstItem="jfO-g5-fEJ" firstAttribute="top" secondItem="XNX-QR-xhf" secondAttribute="bottom" constant="66" id="abI-2i-QV0"/>
+                <constraint firstAttribute="trailing" secondItem="Npk-VN-sGf" secondAttribute="trailing" constant="72" id="bVz-kc-nmH"/>
+                <constraint firstItem="XNX-QR-xhf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cBd-BL-DbO"/>
+                <constraint firstItem="Npk-VN-sGf" firstAttribute="top" secondItem="XNX-QR-xhf" secondAttribute="bottom" constant="66" id="g0k-e2-wzv"/>
+                <constraint firstItem="jfO-g5-fEJ" firstAttribute="centerY" secondItem="tYX-lz-mea" secondAttribute="centerY" id="iGN-D5-7vV"/>
+                <constraint firstItem="jfO-g5-fEJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="69" id="v6t-hg-rli"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="centreLabel" destination="tYX-lz-mea" id="2Ns-fu-nJ6"/>
+                <outlet property="constraintYHitButton" destination="abI-2i-QV0" id="80i-5f-Pdt"/>
+                <outlet property="constraintYMissedButton" destination="g0k-e2-wzv" id="ei1-fS-kCS"/>
+                <outlet property="leftLabel" destination="jfO-g5-fEJ" id="0aA-2w-guK"/>
+                <outlet property="rightLabel" destination="Npk-VN-sGf" id="9bm-4p-dIV"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="fairways_left(3)" width="25" height="25"/>
+        <image name="fairways_mid" width="25" height="25"/>
+        <image name="fairways_right" width="25" height="25"/>
+    </resources>
+</document>

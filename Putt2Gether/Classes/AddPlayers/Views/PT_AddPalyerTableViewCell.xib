@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PT_AddPalyerTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="add_player" translatesAutoresizingMaskIntoConstraints="NO" id="8mf-Rh-ddi">
+                        <rect key="frame" x="7" y="9.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="5kr-N3-9a4"/>
+                            <constraint firstAttribute="width" constant="25" id="yzb-HT-aT8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpV-pD-fuQ">
+                        <rect key="frame" x="60" y="2" width="195" height="38"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3IK-5F-xKD">
+                        <rect key="frame" x="288" y="10" width="24" height="24"/>
+                        <color key="backgroundColor" red="0.023529411760000001" green="0.2666666667" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="bT0-Ja-8RU"/>
+                            <constraint firstAttribute="height" constant="24" id="brE-0k-3k6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                        <state key="normal" title="-">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADMIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujg-4w-GdS">
+                        <rect key="frame" x="258" y="12" width="61" height="21"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h5-Cu-FYC">
+                        <rect key="frame" x="254" y="7" width="58" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="58" id="spP-sY-bpf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                        <state key="normal" title="REMOVE">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ujg-4w-GdS" firstAttribute="leading" secondItem="gpV-pD-fuQ" secondAttribute="trailing" constant="3" id="3ym-Gl-Yr5"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3h5-Cu-FYC" secondAttribute="bottom" constant="-1.5" id="4aN-aZ-CZn"/>
+                    <constraint firstItem="3IK-5F-xKD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5B4-4L-abW"/>
+                    <constraint firstItem="gpV-pD-fuQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-6" id="5Ch-7o-ZgV"/>
+                    <constraint firstItem="ujg-4w-GdS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="6hU-Nh-tEq"/>
+                    <constraint firstItem="3IK-5F-xKD" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="8TF-Se-q7Z"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ujg-4w-GdS" secondAttribute="trailing" constant="-7" id="9hK-zx-hSi"/>
+                    <constraint firstItem="3h5-Cu-FYC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-1" id="G2n-dR-m3g"/>
+                    <constraint firstItem="3h5-Cu-FYC" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Kgy-Lr-fsa"/>
+                    <constraint firstItem="8mf-Rh-ddi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-1" id="Udo-jf-gd9"/>
+                    <constraint firstItem="gpV-pD-fuQ" firstAttribute="leading" secondItem="8mf-Rh-ddi" secondAttribute="trailing" constant="28" id="WeS-if-nxD"/>
+                    <constraint firstItem="8mf-Rh-ddi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="glq-GM-W5X"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ujg-4w-GdS" secondAttribute="bottom" constant="2.5" id="qUA-b5-dt1"/>
+                    <constraint firstItem="3IK-5F-xKD" firstAttribute="leading" secondItem="gpV-pD-fuQ" secondAttribute="trailing" constant="33" id="sBU-U4-fRE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gpV-pD-fuQ" secondAttribute="bottom" constant="-4.5" id="tee-KQ-f8f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addRemoveButton" destination="3IK-5F-xKD" id="v6r-Cr-1n8"/>
+                <outlet property="adminLabel" destination="ujg-4w-GdS" id="c1k-dL-IBP"/>
+                <outlet property="constraintPlayerNameLeading" destination="WeS-if-nxD" id="uWz-lb-QQg"/>
+                <outlet property="playerImage" destination="8mf-Rh-ddi" id="ue9-a8-eya"/>
+                <outlet property="playerName" destination="gpV-pD-fuQ" id="O9v-8v-SD5"/>
+                <outlet property="removeButton" destination="3h5-Cu-FYC" id="sei-pk-pQq"/>
+            </connections>
+            <point key="canvasLocation" x="-757" y="124"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_player" width="25" height="25"/>
+    </resources>
+</document>

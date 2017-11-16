@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1912" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Light.ttf">
+            <string>Lato-Light</string>
+        </mutableArray>
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PT_SelectScorerMoreMainTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_player" translatesAutoresizingMaskIntoConstraints="NO" id="u6w-6I-DQB">
+                        <rect key="frame" x="10" y="6" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="CwR-vN-Z37"/>
+                            <constraint firstAttribute="width" constant="32" id="oiV-dl-ZFM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="BUNNY(10)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynX-80-O3K">
+                        <rect key="frame" x="53" y="12" width="186" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Pi8-XB-U2a"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7De-Ih-u7z">
+                        <rect key="frame" x="254" y="9" width="58" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="Is8-rh-wNg"/>
+                            <constraint firstAttribute="width" constant="58" id="Uhz-jm-Fb3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                        <state key="normal" title="Button"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7De-Ih-u7z" firstAttribute="leading" secondItem="ynX-80-O3K" secondAttribute="trailing" constant="15" id="7Hq-3Y-PIK"/>
+                    <constraint firstItem="ynX-80-O3K" firstAttribute="leading" secondItem="u6w-6I-DQB" secondAttribute="trailing" constant="11" id="Fih-E0-fQz"/>
+                    <constraint firstItem="ynX-80-O3K" firstAttribute="centerY" secondItem="7De-Ih-u7z" secondAttribute="centerY" id="Srz-UG-3dJ"/>
+                    <constraint firstItem="u6w-6I-DQB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="gmk-Vq-HP0"/>
+                    <constraint firstItem="7De-Ih-u7z" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hhB-pF-RK2"/>
+                    <constraint firstItem="7De-Ih-u7z" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="xJW-3Y-yaj"/>
+                    <constraint firstItem="u6w-6I-DQB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yFw-y4-X8L"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="name" destination="ynX-80-O3K" id="57A-GE-tNq"/>
+                <outlet property="scorerButton" destination="7De-Ih-u7z" id="doP-Av-McH"/>
+            </connections>
+            <point key="canvasLocation" x="211" y="214"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_player" width="32" height="32"/>
+    </resources>
+</document>

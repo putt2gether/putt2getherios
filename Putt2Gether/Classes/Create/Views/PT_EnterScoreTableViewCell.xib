@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PT_EnterScoreTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="344" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE ENTRY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GG9-6C-pwq">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="102" id="F1M-eg-sbm"/>
+                            <constraint firstAttribute="height" constant="21" id="MJX-qA-w38"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdS-C8-7UM">
+                        <color key="backgroundColor" red="0.054901960780000002" green="0.27058823529999998" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="clo-Lz-YiS"/>
+                            <constraint firstAttribute="width" constant="58" id="tjK-Cu-rh2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                        <state key="normal" title="MULTI">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="actionSelectScorerType:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PBY-S6-3BR"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dl1-7H-DZG">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="kn5-EM-W8e"/>
+                            <constraint firstAttribute="width" constant="58" id="qih-gm-1hz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                        <state key="normal" title="SINGLE">
+                            <color key="titleColor" red="0.054901960780000002" green="0.23137254900000001" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="actionSelectScorerType:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ada-1Z-dSU"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yd9-Mf-kWJ" userLabel="View-Line">
+                        <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Xws-4p-hOe"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="rqA-iW-gwd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GG9-6C-pwq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9TN-GK-fzI"/>
+                    <constraint firstAttribute="bottom" secondItem="yd9-Mf-kWJ" secondAttribute="bottom" constant="-0.5" id="CXx-91-TWu"/>
+                    <constraint firstItem="GG9-6C-pwq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="JCv-6f-aY9"/>
+                    <constraint firstItem="dl1-7H-DZG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="L1k-hn-daZ"/>
+                    <constraint firstItem="dl1-7H-DZG" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="35" id="Ltj-jA-TQA"/>
+                    <constraint firstItem="yd9-Mf-kWJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="VdE-qo-sVw"/>
+                    <constraint firstItem="TdS-C8-7UM" firstAttribute="centerY" secondItem="dl1-7H-DZG" secondAttribute="centerY" id="ces-r2-esS"/>
+                    <constraint firstAttribute="trailing" secondItem="yd9-Mf-kWJ" secondAttribute="trailing" constant="6" id="h0L-hh-f5t"/>
+                    <constraint firstItem="TdS-C8-7UM" firstAttribute="leading" secondItem="dl1-7H-DZG" secondAttribute="trailing" constant="14" id="lQr-Uw-FlX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="multiButton" destination="TdS-C8-7UM" id="Pe5-Fh-j08"/>
+                <outlet property="singleButton" destination="dl1-7H-DZG" id="SGO-bv-J9s"/>
+            </connections>
+            <point key="canvasLocation" x="-161" y="82"/>
+        </tableViewCell>
+    </objects>
+</document>

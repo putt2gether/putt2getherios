@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Light.ttf">
+            <string>Lato-Light</string>
+        </mutableArray>
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PT_AddMemberTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_player" translatesAutoresizingMaskIntoConstraints="NO" id="Nb7-db-mQv">
+                    <rect key="frame" x="8" y="9" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="O8D-Op-2QY"/>
+                        <constraint firstAttribute="width" constant="25" id="ejR-q0-vHf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfw-9E-4D4">
+                    <rect key="frame" x="41" y="11" width="174" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="174" id="Gnz-vU-hRz"/>
+                        <constraint firstAttribute="height" constant="21" id="vdm-f6-j9F"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdO-5Q-H7K">
+                    <rect key="frame" x="330" y="8" width="76" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="5tS-cM-COC"/>
+                        <constraint firstAttribute="height" constant="28" id="L2L-b7-uzb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="15"/>
+                    <state key="normal" title="ADD">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Vfw-9E-4D4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="1Y9-pA-HAH"/>
+                <constraint firstItem="Nb7-db-mQv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="9xk-Vb-2Dq"/>
+                <constraint firstAttribute="trailing" secondItem="qdO-5Q-H7K" secondAttribute="trailing" constant="8" id="Dcp-D3-21B"/>
+                <constraint firstItem="Vfw-9E-4D4" firstAttribute="leading" secondItem="Nb7-db-mQv" secondAttribute="trailing" constant="8" id="QVl-LU-KHX"/>
+                <constraint firstAttribute="bottom" secondItem="qdO-5Q-H7K" secondAttribute="bottom" constant="8" id="sdp-eR-KUM"/>
+                <constraint firstItem="Nb7-db-mQv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="xfv-Zj-HQh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addBtn" destination="qdO-5Q-H7K" id="HXp-X5-wwd"/>
+                <outlet property="nameLabel" destination="Vfw-9E-4D4" id="wWE-MF-GGW"/>
+                <outlet property="playerImage" destination="Nb7-db-mQv" id="sdF-1S-x7e"/>
+            </connections>
+            <point key="canvasLocation" x="461" y="288"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add_player" width="32" height="32"/>
+    </resources>
+</document>

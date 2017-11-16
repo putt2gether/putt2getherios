@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PT_ScoringView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PT_ScoringView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="322"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORING AVERAGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQC-fD-NZN">
+                    <rect key="frame" x="147" y="12" width="130" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="OmL-qn-Gj5"/>
+                        <constraint firstAttribute="height" constant="21" id="Ovr-5x-deY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYR-it-pfQ">
+                    <rect key="frame" x="45" y="70" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="4Ml-sx-bpc"/>
+                        <constraint firstAttribute="width" constant="42" id="Rxp-os-ccj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="19"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ynv-5f-3am">
+                    <rect key="frame" x="191" y="70" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="AFr-Rn-aNZ"/>
+                        <constraint firstAttribute="width" constant="42" id="Wcc-7d-Odb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="19"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KN8-Yb-IdU">
+                    <rect key="frame" x="333" y="70" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="0oc-hp-9Ru"/>
+                        <constraint firstAttribute="height" constant="21" id="SJ9-WK-tBO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="19"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmY-kz-IrK">
+                    <rect key="frame" x="26" y="98" width="80" height="23"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="QRT-3j-xty"/>
+                        <constraint firstAttribute="width" constant="80" id="zRd-9a-xMJ"/>
+                    </constraints>
+                    <state key="normal" title="PAR3s">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tn-cc-KrK">
+                    <rect key="frame" x="172" y="98" width="80" height="23"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="EsQ-rO-x8k"/>
+                        <constraint firstAttribute="height" constant="23" id="Md8-65-47s"/>
+                    </constraints>
+                    <state key="normal" title="PAR4s">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnT-rh-vi0">
+                    <rect key="frame" x="314" y="98" width="80" height="23"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="EZw-bj-nsz"/>
+                        <constraint firstAttribute="height" constant="23" id="XwV-Ir-9j5"/>
+                    </constraints>
+                    <state key="normal" title="PAR5s">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94869792461395264" green="0.94869792461395264" blue="0.94869792461395264" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iQC-fD-NZN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="5" id="0yw-ZK-SNR"/>
+                <constraint firstItem="bnT-rh-vi0" firstAttribute="top" secondItem="KN8-Yb-IdU" secondAttribute="bottom" constant="7" id="1ev-NY-FKr"/>
+                <constraint firstItem="nYR-it-pfQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="SdI-Iv-DI7"/>
+                <constraint firstItem="bnT-rh-vi0" firstAttribute="centerX" secondItem="KN8-Yb-IdU" secondAttribute="centerX" id="YcH-fR-nbD"/>
+                <constraint firstItem="Ynv-5f-3am" firstAttribute="centerX" secondItem="iQC-fD-NZN" secondAttribute="centerX" id="arC-Y9-za4"/>
+                <constraint firstItem="SmY-kz-IrK" firstAttribute="top" secondItem="nYR-it-pfQ" secondAttribute="bottom" constant="7" id="dwV-NG-z3o"/>
+                <constraint firstItem="nYR-it-pfQ" firstAttribute="centerY" secondItem="Ynv-5f-3am" secondAttribute="centerY" id="ivX-4K-ULJ"/>
+                <constraint firstItem="Ynv-5f-3am" firstAttribute="top" secondItem="iQC-fD-NZN" secondAttribute="bottom" constant="37" id="jqT-Zo-0sG"/>
+                <constraint firstItem="iQC-fD-NZN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="klp-pg-Ovj"/>
+                <constraint firstItem="nYR-it-pfQ" firstAttribute="centerY" secondItem="Ynv-5f-3am" secondAttribute="centerY" id="nYY-lY-E0M"/>
+                <constraint firstItem="SmY-kz-IrK" firstAttribute="centerX" secondItem="nYR-it-pfQ" secondAttribute="centerX" id="pQ3-yB-O4W"/>
+                <constraint firstAttribute="trailing" secondItem="KN8-Yb-IdU" secondAttribute="trailing" constant="39" id="ryi-xp-34l"/>
+                <constraint firstItem="6Tn-cc-KrK" firstAttribute="top" secondItem="Ynv-5f-3am" secondAttribute="bottom" constant="7" id="sRZ-TB-qKq"/>
+                <constraint firstItem="KN8-Yb-IdU" firstAttribute="centerY" secondItem="Ynv-5f-3am" secondAttribute="centerY" id="woE-WD-hht"/>
+                <constraint firstItem="6Tn-cc-KrK" firstAttribute="centerX" secondItem="Ynv-5f-3am" secondAttribute="centerX" id="y1T-HD-tFJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ivX-4K-ULJ"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="centreLabel" destination="Ynv-5f-3am" id="ocT-ac-K5U"/>
+                <outlet property="constraintYHitButton" destination="jqT-Zo-0sG" id="EkM-yg-53Y"/>
+                <outlet property="leftLabel" destination="nYR-it-pfQ" id="Nh5-l9-cOM"/>
+                <outlet property="par3sBtn" destination="SmY-kz-IrK" id="ctW-wZ-T5H"/>
+                <outlet property="par4sBtn" destination="6Tn-cc-KrK" id="T1k-MW-WOb"/>
+                <outlet property="par5sBtn" destination="bnT-rh-vi0" id="BDH-bE-cAT"/>
+                <outlet property="rightLabel" destination="KN8-Yb-IdU" id="qaD-6k-fss"/>
+            </connections>
+        </view>
+    </objects>
+</document>

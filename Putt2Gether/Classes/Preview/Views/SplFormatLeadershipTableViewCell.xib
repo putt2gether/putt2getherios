@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SplFormatLeadershipTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="365" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipe-dQ-Bcu">
+                        <rect key="frame" x="20" y="11.5" width="21" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="21" id="aGr-by-Mqh"/>
+                            <constraint firstAttribute="height" constant="21" id="fUR-DN-TNd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIq-Id-zEo">
+                        <rect key="frame" x="116" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="8qL-ab-YM8"/>
+                            <constraint firstAttribute="width" constant="20" id="JWn-JD-lJM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                        <state key="normal" title="W" backgroundImage="8A2939A6-C376-4DFF-A7B2-13946B3E936A">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 UP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJj-WN-uWp">
+                        <rect key="frame" x="191" y="11.5" width="61" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="0nF-n1-oaw"/>
+                            <constraint firstAttribute="width" constant="61" id="yFN-o0-lZC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjT-qj-dPi">
+                        <rect key="frame" x="275" y="11.5" width="84" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="84" id="GI2-ve-dg8"/>
+                            <constraint firstAttribute="height" constant="21" id="aaY-t6-nZ8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="dIq-Id-zEo" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-56.5" id="QAI-NI-6xR"/>
+                    <constraint firstItem="dIq-Id-zEo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Rhf-Xl-YCC"/>
+                    <constraint firstItem="ipe-dQ-Bcu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="VUN-py-mcn"/>
+                    <constraint firstItem="ipe-dQ-Bcu" firstAttribute="centerY" secondItem="dIq-Id-zEo" secondAttribute="centerY" id="hNX-p9-0RS"/>
+                    <constraint firstItem="nJj-WN-uWp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="i6Q-FS-9JD"/>
+                    <constraint firstItem="fjT-qj-dPi" firstAttribute="centerY" secondItem="nJj-WN-uWp" secondAttribute="centerY" id="oxi-sz-wuJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fjT-qj-dPi" secondAttribute="trailing" constant="-2" id="zpn-Fq-cxA"/>
+                    <constraint firstItem="nJj-WN-uWp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="39" id="zvg-LG-neF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="holeNumber" destination="ipe-dQ-Bcu" id="9OT-sI-MwN"/>
+                <outlet property="label3rdColumn" destination="nJj-WN-uWp" id="wqI-TN-mn0"/>
+                <outlet property="label4thColumn" destination="fjT-qj-dPi" id="BlZ-zf-4PW"/>
+                <outlet property="winnerButton" destination="dIq-Id-zEo" id="N5V-nQ-MoM"/>
+            </connections>
+            <point key="canvasLocation" x="56.5" y="137"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="8A2939A6-C376-4DFF-A7B2-13946B3E936A" width="38" height="38">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
+GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
+c1dOU0NvbG9ygAKADRIgwAAAgAOAC1h7MzgsIDM4fdIVChYYWk5TLm9iamVjdHOhF4AEgArSFQoaHaIb
+HIAFgAaACRAA0iAKISJfEBROU1RJRkZSZXByZXNlbnRhdGlvboAHgAhPER8uTU0AKgAAFpgAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkQFSAXJzRMKUNZ
+gzZYdqw9Y4fDP2aKxzpef7kvTGaWHzRGZw4XHy8DBQcLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAABwwRGR4xQ2M4XH61SXmk51KHuP9WjsD/VI2//1OKvv9Sib7/Uoq+/1WOwP9Vi77/TX+u
+9EBskdEpRF6IDxkkNQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQkMFCM9VX1CcpzgUom9/1KOxP9GhL7/OHiy
+/y5rqP8oZKD/JmKe/yVhnf8nYp7/KWai/y9tqf87ebX/Soe//1SPxP9LgLD1M1h4rRAbJjkAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+ABYlNE47aJPRT4nA/0yJwv83d7T/JGGf/yNclf8vZJX/P2+b/0t2n/9RfKP/U36k/1F8o/9Kdp//P26b
+/y9klv8jXJb/JWOg/zt5tf9Pi8T/SH2u9SdDXosEBwsRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEDBAgiPViBRH6y+kuJw/83eLb/IF2d/ytgk/9KdZ7/XoSo
+/2GJqv9fiKz/XYWq/1uFqv9ahar/W4Wq/12Fqv9fiKz/YYmq/12EqP9Gc53/J12T/yJfnf88fLn/TYrD
+/zVhiMMMFR0tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADBAgMKk5x
+pUeFvv9DhMD/Jman/yRakf9Md5//Xoap/1qEqv9Ugan/Un+p/09+qP9Nfaj/THyo/0x8qP9MfKj/TX2o
+/09+qP9SgKn/VIGp/1uEqv9ehqn/RnSd/yBYkf8qaqj/SIjE/zxun+IPHCg+AAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQMEByZMb6NEhL//PX+//x1bnP8zZZT/WoGm/1aBqP9Qfqj/THyn
+/0h5p/9Ed6b/QXWm/z90pf8+dKX/PnSl/z50pv8/dKb/QXam/0V3pv9Ieqj/TH2o/1B/qf9Xgqn/V4Cl
+/ytgkv8hX5//Q4TA/zpvo+cMGCU2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeO1mEQIC9
+/zt/v/8bWZr/OmqW/1eBpv9Pfaf/Snqn/0V3pv9AdaX/PHKl/zhwpf82b6X/NG6l/zRupf80bab/M26l
+/zRtpv82b6X/OXCl/zxzpf9Adab/Rnin/0t6qP9Qfqf/V4Gn/zJlk/8bWZr/P4LC/zJkldgGCxEbAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAECEyTDh2sfk7gML/Glmb/zVmlP9Sf6X/Snum/0V4pv8/dKb/OnKl
+/zZvpf8zbqX/MW2l/zBrpv8uaqb/Lmqm/y5qpv8uaqb/Lmun/zBrpv8xbKb/M26m/zdvpf87cqX/QHWm
+/0d4p/9Ke6b/U4Cm/y1fkf8eXp//P4PE/yVNdKwAAQIFAAAAAAAAAAAAAAAAAAAAAAQICxMtYJLVO4HE
+/yFkqP8lWo3/T3yk/0d4pf9Cdqb/PHOl/zdwpv8zbqb/MGun/y5qp/8taqf/LGqn/ytqp/8raqf/K2qn
+/ytqp/8raqj/LWqo/y1qqP8ua6j/MWyn/zRvp/83cKb/PnSm/0R2p/9HeKb/Tnuj/x9Ui/8maKz/O3y8
+/xIoPlwAAAAAAAAAAAAAAAAAAAAAFzVUfDd9wP8sc7n/Fk6I/0Rynf9Fd6X/QHWl/zpypf81b6f/MW2o
+/y5rqP8taqj/LGqo/ytqqP8qaqj/Kmqn/ypqqP8qaaj/Kmqo/ypqqP8qaqj/K2qo/yxqqP8ua6n/L2yp
+/zFtqP82cKf/O3Om/0F1p/9HeKX/P2+b/xVOi/8yeb3/K2GU2QMIDBMAAAAAAAAAAAQJDxgpYpviNH7F
+/xlZnP8mWoz/RHai/z50pf86cab/NW+n/zFtqP8ua6n/LWqp/ytqqf8raqn/Kmqo/yppp/8qaaf/Kmim
+/ypopv8qaKb/Kmmn/ypqp/8qaqn/Kmqp/yxqqf8ta6n/Lmyp/zFvqf81cKf/OnKn/0B1pv9DdaL/IVaJ
+/xtcn/80fMD/Ei1GaQAAAAAAAAAAEClCYzB3vv8ocLn/Fk2H/y5hlP8/c6X/OXGl/zVvpv8xban/Lmyp
+/yxrqf8saqn/Kmqp/yppp/8qaKb/Kmel/ypnpP8qZqT/Kmak/ypmpP8qZ6X/Kmim/yppp/8qaqj/Kmqp
+/yxqqf8sbKn/Lmyp/zJvqf81cKf/OnKn/z90pv8rYJL/FU2J/yx0vv8kV4rIAQMFCAABAQEdTXy4L3vJ
+/xpdov8bUIb/KF+W/zpxpv81b6f/MW2o/y5tqf8sbKn/LGup/ypqqP8qaaf/Kmem/ypmpP8pZaL/KWWi
+/ylkof8pZKH/KWSh/yllof8pZqT/Kmel/ypop/8qaqj/Kmqp/yxrqf8tbKr/L22q/zFvqf81cKj/OnGm
+/yZelf8ZT4b/HmKo/ytwtPkJGCU6BAsUHyRjo+opdsX/FVCR/x9Vi/8gWpX/NG6l/zJtqP8vban/LWyq
+/yxrqf8raqn/Kmqo/ypopv8qZqL/KWWi/ylkof8oZJ//KGSf/yhkn/8oZJ//KGSf/ylkof8pZaL/Kmak
+/ypop/8qaqn/K2uq/y1srP8ubaz/L22p/zNwqf8ybaX/H1mV/x1Ti/8WU5X/KnXA/xQ7X5AKHTNMJnC6
+/iNuvf8TSob/HVSO/xpWlP8oZaD/MW+p/y5sqv8sbKz/K2uq/ypqqf8qaKb/Kmak/yllov8oZKD/KGSe
+/ydinf8nYpz/J2Kc/ydinP8oY53/KGSe/ylkof8pZaL/Kmel/yppqP8qaqn/LGyq/y1trP8ubaz/MnCq
+/yVin/8aVpX/HVSO/xRNif8kb7n/IF2b4hE0WYQmdMT/HGOw/xNKhP8ZU5H/GFWW/xhXmv8ta6j/Lm2t
+/yxsrP8qa6r/Kmmo/ypnpf8pZaL/KWSh/yhknv8nYpz/J2Gc/ydgm/8mYJv/J2Cb/ydinP8nYp3/KGSf
+/ylkof8qZqL/Kmim/ypqqP8ra6r/LGyt/y9urf8qaKf/GFea/xhVlv8ZVJH/EkqG/x5lsv8jbLX/FUN1
+rSRzxf8YXaf/E0mE/xZSkv8WVJb/FFSa/xlboP8rbKz/LW2t/ypqqf8qaaf/Kmek/yllov8oZJ//J2Kd
+/ydinP8mYJr/Jl+Y/yZfmP8mYJj/JmCb/ydhnP8oY57/KGSg/yllov8qZ6X/Kmmo/yprqv8ubq7/Kmuq
+/xdZn/8VVZv/F1WX/xdSkv8SSoX/GmCp/yJsuP8XTYTEI3LF/xdZoP8SSoX/FVCS/xVTlv8UVZv/E1Wc
+/xdaof8naKn/LWyq/yppp/8qZqT/KWSh/yhkn/8nYpz/J2Cb/yZfmP8lXpb/JV6W/yZel/8mX5r/J2Gb
+/ydinf8oZJ//KWWh/ypnpf8qaqj/LW2s/yRmqf8WWaD/E1ae/xVVm/8VVJf/FVGS/xJJhf8XXKX/Imy7
+/xhOhsgjccL/FVee/xJKhf8VUJH/FVKW/xRUmv8UVp3/E1Sf/xNWn/8dXqT/KGem/yxopf8qZaH/KGSe
+/ydinP8mYJv/Jl+Y/yVelv8lXpX/JV6X/yZfmP8nYZv/J2Kd/ylkn/8qZqL/K2mm/ydnp/8bXqL/E1Wg
+/xNVoP8UV57/FFSb/xVTl/8VUJH/EkmF/xdaof8ibLj/Fkd7uiNwwP8WWZ//EkmD/xVQjv8UUpX/FFSa
+/xRWnf8UV5//E1af/xFSm/8TU5r/Glmb/yNfnv8nY57/KWOd/ylinP8oYZr/KGCY/yhfmP8oYJj/KGGb
+/yljnf8pZJ7/JmOf/yFfnv8ZWZv/ElOb/xFTnP8UV6D/FFig/xRWn/8UVJv/FFOW/xVQkP8SSIP/F1ui
+/yFqtv8SOWKYI3C//xdcpf8SR4D/FU6M/xRRk/8UU5j/FFWe/xRXn/8TV5//E1Wc/xFSmP8QTpX/EE6T
+/xJPkv8WUZL/GVWT/xtWk/8dV5P/HViT/x1XlP8bVpP/GVST/xZSk/8RT5L/EE6T/xBPlv8SU5r/E1Wd
+/xRXoP8UWKD/FFaf/xRUmv8VUpT/FU6N/xFIg/8ZXqf/IWmy/wwlQmYibbn/GmGt/xBGgP8UTYn/FFCR
+/xRTl/8UVZ3/FFeg/xRXn/8TVJ3/ElKa/xFQl/8RT5T/EE2S/w9Kjv8OSYz/DkiL/w5Iiv8OSIr/DkiK
+/w5Ii/8OSYz/D0uQ/xBNkv8RT5X/ElGX/xJTm/8TVp7/FFig/xRYoP8UVp3/FFOX/xVRkv8UTon/EUeB
+/xxjrf8eYKb3BRAcMB1hp/Uearf/EEeD/xRKhv8UTo3/FFKV/xRVm/8UVp//FFeg/xNWnv8SU5z/ElGY
+/xFQlf8RTpP/EU2R/xFMkP8QS47/D0qN/w9Kjf8QSo3/EEuO/xFMkP8RTZL/EU6U/xFQlv8SUpr/E1Sc
+/xNXn/8UWKH/FFeg/xRVm/8UU5X/FE+O/xRKhf8RSof/H2m0/xVFdrcABAcMGFCJ0iFtvP8STY3/E0d/
+/xROiv8UUJH/E1OX/xRWnv8UWKH/E1ef/xNUnf8SUpv/ElGX/xFPlf8RTpP/EU2S/xBMkf8QTJD/EEyQ
+/xBMkf8RTZH/EU2S/xFOlP8RUJb/ElGY/xJTnP8TVZ7/FFig/xRYof8UVp7/FFSY/xRRkv8UTor/Ekd/
+/xNQk/8gabL/CiE6XAAAAAAPMlaKIm25/xdZoP8RRHv/E0uF/xROjP8TUZP/FFWb/xRXn/8UV6D/E1ae
+/xNUnf8SUpr/ElGX/xFQlv8RT5T/EU6U/xFOk/8RTpP/EU6T/xFPlP8RT5X/EVCW/xJRmP8SU5v/E1Wd
+/xNXoP8UWKH/FFeg/xRVm/8UUpT/FE6N/xRKhf8QRX3/GV2l/xtZl+QCCQ4ZAAAAAAUSIDUeX6L3Hmey
+/xBHg/8TRn3/E0uH/xRPkP8TUpb/FFad/xRYoP8UV6D/E1ae/xNUnf8SU5v/ElKY/xFRl/8RUJb/EVCW
+/xFQlv8RUJb/EVCX/xJRl/8SUpr/ElOb/xNUnf8TV5//FFah/xRYof8UVp3/FFKW/xRPkP8TTIj/E0Z9
+/xFJh/8faLL/ETZelgAAAAAAAAAAAAAAAhM/bbAharb/FVWa/xBCef8TSH//E0yJ/xNPkf8TU5f/FFae
+/xRXoP8TV6D/E1ae/xNVnf8TVJz/ElOb/xJSmv8SUpr/ElKa/xJSmv8SU5r/ElOb/xNUnf8TVp7/E1Wg
+/xRWof8UWKH/FFad/xNTmP8TUJL/FE2I/xNIf/8QQ3r/F1id/x1doPUFER4zAAAAAAAAAAAAAAAABhMh
+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
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2Rlc2MAAAEIAAAAb2RzY20AAAF4AAAFnGNwcnQA
+AAcUAAAAOHd0cHQAAAdMAAAAFHJYWVoAAAdgAAAAFGdYWVoAAAd0AAAAFGJYWVoAAAeIAAAAFHJUUkMA
+AAecAAAADmNoYWQAAAesAAAALGJUUkMAAAecAAAADmdUUkMAAAecAAAADmRlc2MAAAAAAAAAFEdlbmVy
+aWMgUkdCIFByb2ZpbGUAAAAAAAAAAAAAABRHZW5lcmljIFJHQiBQcm9maWxlAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtbHVjAAAAAAAAAB8AAAAMc2tTSwAAACgA
+AAGEZGFESwAAAC4AAAGsY2FFUwAAACQAAAHadmlWTgAAACQAAAH+cHRCUgAAACYAAAIidWtVQQAAACoA
+AAJIZnJGVQAAACgAAAJyaHVIVQAAACgAAAKaemhUVwAAABYAAALCbmJOTwAAACYAAALYY3NDWgAAACIA
+AAL+aGVJTAAAAB4AAAMgaXRJVAAAACgAAAM+cm9STwAAACQAAANmZGVERQAAACwAAAOKa29LUgAAABYA
+AAO2c3ZTRQAAACYAAALYemhDTgAAABYAAAPMamFKUAAAABoAAAPiZWxHUgAAACIAAAP8cHRQTwAAACYA
+AAQebmxOTAAAACgAAAREZXNFUwAAACYAAAQedGhUSAAAACQAAARsdHJUUgAAACIAAASQZmlGSQAAACgA
+AASyaHJIUgAAACgAAATacGxQTAAAACwAAAUCcnVSVQAAACIAAAUuYXJFRwAAACYAAAVQZW5VUwAAACYA
+AAV2AFYBYQBlAG8AYgBlAGMAbgD9ACAAUgBHAEIAIABwAHIAbwBmAGkAbABHAGUAbgBlAHIAZQBsACAA
+UgBHAEIALQBiAGUAcwBrAHIAaQB2AGUAbABzAGUAUABlAHIAZgBpAGwAIABSAEcAQgAgAGcAZQBuAOgA
+cgBpAGMAQx6lAHUAIABoAOwAbgBoACAAUgBHAEIAIABDAGgAdQBuAGcAUABlAHIAZgBpAGwAIABSAEcA
+QgAgAEcAZQBuAOkAcgBpAGMAbwQXBDAEMwQwBDsETAQ9BDgEOQAgBD8EQAQ+BEQEMAQ5BDsAIABSAEcA
+QgBQAHIAbwBmAGkAbAAgAGcA6QBuAOkAcgBpAHEAdQBlACAAUgBWAEIAwQBsAHQAYQBsAOEAbgBvAHMA
+IABSAEcAQgAgAHAAcgBvAGYAaQBskBp1KAAgAFIARwBCACCCcl9pY8+P8ABHAGUAbgBlAHIAaQBzAGsA
+IABSAEcAQgAtAHAAcgBvAGYAaQBsAE8AYgBlAGMAbgD9ACAAUgBHAEIAIABwAHIAbwBmAGkAbAXkBegF
+1QXkBdkF3AAgAFIARwBCACAF2wXcBdwF2QBQAHIAbwBmAGkAbABvACAAUgBHAEIAIABnAGUAbgBlAHIA
+aQBjAG8AUAByAG8AZgBpAGwAIABSAEcAQgAgAGcAZQBuAGUAcgBpAGMAQQBsAGwAZwBlAG0AZQBpAG4A
+ZQBzACAAUgBHAEIALQBQAHIAbwBmAGkAbMd8vBgAIABSAEcAQgAg1QS4XNMMx3xmbpAaACAAUgBHAEIA
+IGPPj/Blh072TgCCLAAgAFIARwBCACAw1zDtMNUwoTCkMOsDkwO1A70DuQO6A8wAIAPAA8EDvwPGA68D
+uwAgAFIARwBCAFAAZQByAGYAaQBsACAAUgBHAEIAIABnAGUAbgDpAHIAaQBjAG8AQQBsAGcAZQBtAGUA
+ZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAZQBsDkIOGw4jDkQOHw4lDkwAIABSAEcAQgAgDhcOMQ5IDicO
+RA4bAEcAZQBuAGUAbAAgAFIARwBCACAAUAByAG8AZgBpAGwAaQBZAGwAZQBpAG4AZQBuACAAUgBHAEIA
+LQBwAHIAbwBmAGkAaQBsAGkARwBlAG4AZQByAGkBDQBrAGkAIABSAEcAQgAgAHAAcgBvAGYAaQBsAFUA
+bgBpAHcAZQByAHMAYQBsAG4AeQAgAHAAcgBvAGYAaQBsACAAUgBHAEIEHgQxBEkEOAQ5ACAEPwRABD4E
+RAQ4BDsETAAgAFIARwBCBkUGRAZBACAGKgY5BjEGSgZBACAAUgBHAEIAIAYnBkQGOQYnBkUARwBlAG4A
+ZQByAGkAYwAgAFIARwBCACAAUAByAG8AZgBpAGwAZXRleHQAAAAAQ29weXJpZ2h0IDIwMDcgQXBwbGUg
+SW5jLiwgYWxsIHJpZ2h0cyByZXNlcnZlZC4AWFlaIAAAAAAAAPNSAAEAAAABFs9YWVogAAAAAAAAdE0A
+AD3uAAAD0FhZWiAAAAAAAABadQAArHMAABc0WFlaIAAAAAAAACgaAAAVnwAAuDZjdXJ2AAAAAAAAAAEB
+zQAAc2YzMgAAAAAAAQxCAAAF3v//8yYAAAeSAAD9kf//+6L///2jAAAD3AAAwGzSJSYnKFokY2xhc3Nu
+YW1lWCRjbGFzc2VzXxAQTlNCaXRtYXBJbWFnZVJlcKMnKSpaTlNJbWFnZVJlcFhOU09iamVjdNIlJiwt
+V05TQXJyYXmiLCrSJSYvMF5OU011dGFibGVBcnJheaMvLCrTMjMKNDU2V05TV2hpdGVcTlNDb2xvclNw
+YWNlRDAgMAAQA4AM0iUmODlXTlNDb2xvcqI4KtIlJjs8V05TSW1hZ2WiOypfEA9OU0tleWVkQXJjaGl2
+ZXLRP0BUcm9vdIABAAgAEQAaACMALQAyADcARgBMAFcAXgBlAHIAeQCBAIMAhQCKAIwAjgCXAJwApwCp
+AKsArQCyALUAtwC5ALsAvQDCANkA2wDdIA8gFCAfICggOyA/IEogUyBYIGAgYyBoIHcgeyCCIIoglyCc
+IJ4goCClIK0gsCC1IL0gwCDSINUg2gAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAAAAAAACDcA
+</mutableData>
+        </image>
+    </resources>
+</document>
